@@ -1,13 +1,13 @@
 
 # AXI UVC (Universal Verification Component)
 
-#overview
+**#overview**
 
 This repository contains a SystemVerilog-based AXI (Advanced eXtensible Interface) Universal Verification Component (UVC) developed for verifying AXI-based DUTs. The environment is modular and reusable, supporting configurable transactions, sequences, and protocol checking.
 
 The UVC follows a layered testbench architecture with generator, driver, monitor, and scoreboard-style verification flow.
 
-##Features
+**##Features**
 #Full AXI protocol signal modeling
  -Configurable transaction class (axi_tx)
  -Master-side driver with handshake handling
@@ -17,7 +17,7 @@ The UVC follows a layered testbench architecture with generator, driver, monitor
  -Slave BFM support for response generation
  -Modular and reusable environment
 
-axi_uvc/
+**axi_uvc/**
 │── axi_agent.sv        # Agent containing driver, monitor, sequencer
 │── axi_base_test.sv    # Base test class
 │── axi_config.sv       # Configuration class
@@ -48,7 +48,7 @@ Observes DUT signals and reconstructs transactions
 #Coverage
 Tracks protocol scenarios
 
-#Supported Transactions
+**#Supported Transactions**
 -AXI Write (AW, W, B channels)
 -AXI Read (AR, R channels)
 -Burst transfers
